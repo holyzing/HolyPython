@@ -8,8 +8,8 @@ class ApiInfor(object):
         self.type = type
         self.args = args
         self.doc = doc
-        self.favorite = favorite  
-class Api(object): 
+        self.favorite = favorite
+class Api(object):
    def __init__(self, apiname, apiInfor):
         self.apiname = apiname
         self.apiInfor = apiInfor
@@ -69,36 +69,3 @@ class Myserver(SocketServer.BaseRequestHandler):
 if __name__ == "__main__":
     server = SocketServer.ThreadingTCPServer(("127.0.0.1", 60000),Myserver)
     server.serve_forever()
-
-"""
-    这是一段文档注释
-"""
-
-'''
-   这是一段普通注释
-'''
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
