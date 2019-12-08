@@ -2,6 +2,7 @@ hook配置
 	export GIT_SSH_COMMAND='ssh -o KexAlgorithms=+diffie-hellman-group1-sha1'
 	Host *
 		KexAlgorithms +diffie-hellman-group1-sha1
+
 ------------------------------------------------------
 git fetch ssh://houll0709@192.168.100.149:29418/autotest/msClient refs/changes/31/59131/4 && git cherry-pick FETCH_HEAD
 解决冲突
@@ -17,49 +18,13 @@ git reset commit
 git log --author="houll0709" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
 git log --stat|perl -ne 'END { print $c } $c += $1 if /(\d+) insertions/'
 
-
-
-Bug:[] .
-
-[IssueID]: TS-Bug-
-[Component]: GUI
-[Module]: MainApp
-[Type]: N/A
-[ITChecklistAddress]: N/A
-[OpenSourceInfo]: 
-[DependsOn]: 
-[DetailInfo]: .
-
-
-TSRunner-Utils
-TSRunner-Locale
-TSRunner-Logger
-TSRunner-Exception
-TSRunner-DeviceManager
-TSRunner-DeviceScreenManager
-TSRunner-ProjectManager
-TSRunner-Dbc
-TSRunner-DeviceLog
-TSRunner-PlaybackManager
-TSRunner-ImageEngine
-TSRunner-DeviceEvent
-TSRunner-RecordManager
-tsrunner
-
-TSRunner-PlaybackBootstrap
-TSRunner-RecordBootstrap
-TSRunner-PlaybackEngine
-TSRunner-TestReport
-
-
-
-
 -- ------------------------------------------------------------------------------------------
 adb devices
 adb -s <serial-num> shell
 adb -s c7c6eec2 shell screenrecord --time-limit 20 /sdcard/demo1.mp4
 adb -s c7c6eec2 pull /sdcard/demo.mp4
 -- ------------------------------------------------------------------------------------------
+
 没有消息就是好消息，Unix的哲学
 	shutdown -r now    reboot
 	sudo useradd -m hadoop"为什么没有选项 -m 无法创建家目录
@@ -72,6 +37,7 @@ adb -s c7c6eec2 pull /sdcard/demo.mp4
 	netstat -apn
 	chown -r root:root jdk_1.8
 	command -v git   :命令的所处路径
+
 git：只能跟踪可编码变换的文本文档，对于二进制文件则只能简单的跟踪
 	git config --global user.name "Your Name"
 	git config --global user.email "email@example.com"
