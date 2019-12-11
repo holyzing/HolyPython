@@ -5,29 +5,6 @@ import numpy as np
 from torch import nn, optim
 from torchvision.datasets import ImageFolder, folder
 from torch.utils.data import Dataset, DataLoader, dataloader
-'''
-Machine Learing:
-    GBDT:
-Deep Learning:
-
-    Liner Regression:
-    Logistic Regression:
-
-    Depth Neural Network：
-    Recurrent Neural Network：
-    Convolution Neural Network：
-    Generative Adversarial Network：
-    Multilayer Fully Connected Neural Network：
-
-# 1-极限
-# 1-导数
-# 1-微分
-# 2-方向导数
-# 3-梯度
-# 4-梯度下降算法 (参数更新公式)
-
-'''
-
 
 class EntryLevel(object):
     @staticmethod
