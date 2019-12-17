@@ -33,11 +33,6 @@
         聚类：将数据集分成由类似的对象组成的多个类的过程，也就是相似性学习！
         密度估计：将寻找描述数据统计值的过程，数据与每个分组的相识程度
 
-        k-均值          最大期望算法
-        DBSCAN          Parzen窗设计
-
-    semi-supervised learning
-    Reinforcement Learning
         数    据↘
             ↓     ↘
         模    型 ← 算法 ← 模型原型
